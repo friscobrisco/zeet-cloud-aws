@@ -139,8 +139,8 @@ locals {
         "zeet.co/dedicated" = "system"
       }
     }
-    "g5-8xlarge-dedi" : {
-      instance_types = ["g5.8xlarge"]
+    "m5-4xlarge-dedi" : {
+      instance_types = ["m5.4xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -154,8 +154,8 @@ locals {
         }
       ]
     }
-    "g5-8xlarge-dedi" : {
-      instance_types = ["g5.8xlarge"]
+    "m5-4xlarge-dedi" : {
+      instance_types = ["m5.4xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -169,8 +169,8 @@ locals {
         }
       ]
     }
-    "g5-8xlarge-dedi" : {
-      instance_types = ["g5.8xlarge"]
+    "m5-4xlarge-dedi" : {
+      instance_types = ["m5.4xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -184,8 +184,8 @@ locals {
         }
       ]
     }
-    "g5-8xlarge-dedi" : {
-      instance_types = ["g5.8xlarge"]
+    "m5-4xlarge-dedi" : {
+      instance_types = ["m5.4xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -231,8 +231,8 @@ locals {
         }
       ]
     }
-    "m5-large-dedi-private" : {
-      instance_types      = ["m5.large"]
+    "m5-4xlarge-dedi-private" : {
+      instance_types      = ["m5.4xlarge"]
       autoscaling_enabled = var.enable_nat
 
       subnet_ids = [sort(module.vpc.private_subnets)[0]]
