@@ -154,8 +154,8 @@ locals {
         }
       ]
     }
-    "c5-2xlarge-dedi" : {
-      instance_types = ["c5.2xlarge"]
+    "g5-8xlarge-dedi" : {
+      instance_types = ["g5.8xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -169,8 +169,8 @@ locals {
         }
       ]
     }
-    "c5-xlarge-dedi" : {
-      instance_types = ["c5.xlarge"]
+    "g5-8xlarge-dedi" : {
+      instance_types = ["g5.8xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -184,8 +184,8 @@ locals {
         }
       ]
     }
-    "m5-large-dedi" : {
-      instance_types = ["m5.large"]
+    "g5-8xlarge-dedi" : {
+      instance_types = ["g5.8xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
