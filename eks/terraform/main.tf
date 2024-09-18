@@ -231,7 +231,7 @@ locals {
         }
       ]
     }
-    "m5-4xlarge-dedi-private" : {
+    "m5-4xl-dedi-private" : {
       instance_types      = ["m5.4xlarge"]
       autoscaling_enabled = var.enable_nat
 
