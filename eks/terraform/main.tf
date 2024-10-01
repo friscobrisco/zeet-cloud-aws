@@ -131,16 +131,16 @@ resource "aws_key_pair" "ssh" {
 
 locals {
   worker_templates_cpu = { for k, v in {
-    "m5-12xlarge-system" : {
-      instance_types = ["m5.12xlarge"]
+    "m5-2xlarge-system" : {
+      instance_types = ["m5.2xlarge"]
       desired_size   = 1
 
       labels = {
         "zeet.co/dedicated" = "system"
       }
     }
-    "m5-12xlarge-dedi" : {
-      instance_types = ["m5.12xlarge"]
+    "m5-2xlarge-dedi" : {
+      instance_types = ["m5.2xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -154,8 +154,8 @@ locals {
         }
       ]
     }
-    "m5-12xlarge-dedi" : {
-      instance_types = ["m5.12xlarge"]
+    "m5-2xlarge-dedi" : {
+      instance_types = ["m5.2xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -169,8 +169,8 @@ locals {
         }
       ]
     }
-    "m5-12xlarge-dedi" : {
-      instance_types = ["m5.12xlarge"]
+    "m5-2xlarge-dedi" : {
+      instance_types = ["m5.2xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -184,8 +184,8 @@ locals {
         }
       ]
     }
-    "m5-12xlarge-dedi" : {
-      instance_types = ["m5.12xlarge"]
+    "m5-2xlarge-dedi" : {
+      instance_types = ["m5.2xlarge"]
 
       labels = {
         "zeet.co/dedicated" = "dedicated"
@@ -231,8 +231,8 @@ locals {
         }
       ]
     }
-    "m5-12xl-dedi-private" : {
-      instance_types      = ["m5.12xlarge"]
+    "m5-2xl-dedi-private" : {
+      instance_types      = ["m5.2xlarge"]
       autoscaling_enabled = var.enable_nat
 
       subnet_ids = [sort(module.vpc.private_subnets)[0]]
